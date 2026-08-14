@@ -70,14 +70,12 @@ function GlitchBackdrop() {
       <div
         className="absolute left-1/2 top-1/2 h-[min(760px,86vh)] w-[min(1100px,92vw)] -translate-x-1/2 -translate-y-1/2 animate-breathe"
         style={{
-          backgroundImage: `url(${krakenSkull.url})`,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
+          backgroundImage: `url(${krakenSkull})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
-          opacity: 0.2,
-          filter: "grayscale(1) brightness(0.9)",
-          maskImage: "radial-gradient(56% 52% at 50% 48%, #000 40%, transparent 76%)",
-          WebkitMaskImage: "radial-gradient(56% 52% at 50% 48%, #000 40%, transparent 76%)",
+          opacity: 1,
+          filter: "none",
         }}
       />
       <div
@@ -162,7 +160,7 @@ function OctoTerminal() {
 
       <div className="relative z-10 flex min-h-screen flex-col justify-between">
         <header className="flex items-start justify-between px-7 pt-6 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-          <span className="text-primary/70">ОСЬМИНОГ - 0</span>
+          <span className="text-primary/70">осьминог - 0</span>
           <div className="flex items-center gap-5">
             <span>ВЕРСИЯ 26</span>
             <button
@@ -182,7 +180,7 @@ function OctoTerminal() {
         <section className="flex flex-1 flex-col justify-end px-6 pb-[24vh]">
           <div className="mx-auto w-full max-w-3xl">
             <h1 className="mb-6 text-center font-display text-2xl uppercase text-foreground/90 sm:text-3xl">
-              локальная голова готова
+              ЛОКАЛЬНАЯ ГОЛОВА ГОТОВА
             </h1>
 
             {log.length > 0 && (
