@@ -1,4 +1,4 @@
-import krakenSkull from "@/assets/kraken-skull.webp";
+import krakenSkull from "@/assets/kraken-skull.png";
 
 interface Props {
   status: string;

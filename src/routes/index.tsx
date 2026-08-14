@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { THEMES, type ThemeSlug } from "@/lib/themes";
 import { useTheme } from "@/hooks/use-theme";
-import krakenSkull from "@/assets/kraken-skull.webp";
+import krakenSkull from "@/assets/kraken-skull.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
