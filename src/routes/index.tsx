@@ -75,7 +75,7 @@ function GlitchBackdrop() {
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           opacity: 1,
-          filter: "none",
+          filter: "brightness(1.35) contrast(1.05)",
         }}
       />
       <div
@@ -108,7 +108,7 @@ function GlitchBackdrop() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(70% 60% at 50% 68%, transparent 0%, color-mix(in oklab, var(--background) 88%, transparent) 100%)",
+            "radial-gradient(70% 60% at 50% 68%, transparent 30%, color-mix(in oklab, var(--background) 70%, transparent) 100%)",
         }}
       />
     </div>
